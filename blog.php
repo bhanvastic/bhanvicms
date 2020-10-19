@@ -42,7 +42,7 @@
         
       
       <ul class="navbar-nav ml-auto">
-        <form class="form-inline" action="Blog.php">
+        <form class="form-inline" action="blog.php">
             <div class="form-group">
                 <input class="form-control mr-2" type="text" name="Search" placeholder="Search here" value="">
            <button  class="btn btn-primary" name="Searchbutton">Go</button>
@@ -116,7 +116,7 @@
         <?php 
         if (strlen($PostDescription)>150){
 $PostDescription=substr($PostDescription,0,150)."..."; } echo htmlentities($PostDescription); ?></p>
-    <a href="FullPost.php?id= <?php echo $PostId; ?>" style="float:right;">
+    <a href="fullpost.php?id= <?php echo $PostId; ?>" style="float:right;">
     <span class="btn btn-info"> Read More >> </span>
 
 
