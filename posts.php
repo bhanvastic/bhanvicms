@@ -32,19 +32,19 @@
           <a href="Dashboard.php" class="nav-link">Dashboard</a>
         </li>
         <li class="nav-item">
-          <a href="Posts.php" class="nav-link">Posts</a>
+          <a href="posts.php" class="nav-link">Posts</a>
         </li>
         <li class="nav-item">
-          <a href="Categories.php" class="nav-link">Categories</a>
+          <a href="categories.php" class="nav-link">Categories</a>
         </li>
         <li class="nav-item">
-          <a href="Admins.php" class="nav-link">Manage Admins</a>
+          <a href="admins.php" class="nav-link">Manage Admins</a>
         </li>
         <li class="nav-item">
-          <a href="Comments.php" class="nav-link">Comments</a>
+          <a href="comments.php" class="nav-link">Comments</a>
         </li>
         <li class="nav-item">
-          <a href="Blog.php?page=1" class="nav-link" target="_blank">Live Blog</a>
+          <a href="blog.php?page=1" class="nav-link" target="_blank">Live Blog</a>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
