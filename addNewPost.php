@@ -17,13 +17,13 @@ if(isset($_POST["Submit"])){
 
   if(empty($PostTitle)){
     $_SESSION["ErrorMessage"]= "Title Cant be empty";
-    Redirect_to("AddNewPost.php");
+    Redirect_to("addNewPost.php");
   }elseif (strlen($PostTitle)<5) {
     $_SESSION["ErrorMessage"]= "Post Title should be greater than 5 characters";
-    Redirect_to("AddNewPost.php");
+    Redirect_to("addNewPost.php");
   }elseif (strlen($PostText)>9999) {
     $_SESSION["ErrorMessage"]= "Post Description should be less than than 1000 characters";
-    Redirect_to("AddNewPost.php");
+    Redirect_to("addNewPost.php");
   }else{
     // Query to insert Post in DB When everything is fine
     global $ConnectingDB;
@@ -35,10 +35,10 @@ if(isset($_POST["Submit"])){
     move_uploaded_file($_FILES["Image"]["tmp_name"],$Target);
     if($Execute){
       $_SESSION["SuccessMessage"] = "Post with id : " . mysqli_insert_id($ConnectingDB) . " added Successfully";
-      Redirect_to("AddNewPost.php");
+      Redirect_to("addNewPost.php");
     }else {
       $_SESSION["ErrorMessage"] = "Something went wrong. Try Again !" . $Image;
-      Redirect_to("AddNewPost.php");
+      Redirect_to("addNewPost.php");
     }
   }
 } //Ending of Submit Button If-Condition
@@ -115,7 +115,7 @@ if(isset($_POST["Submit"])){
        echo ErrorMessage();
        echo SuccessMessage();
        ?>
-      <form class="" action="AddNewPost.php" method="post" enctype="multipart/form-data">
+      <form class="" action="addNewPost.php" method="post" enctype="multipart/form-data">
         <div class="card bg-secondary text-light mb-3">
           <div class="card-body bg-dark">
             <div class="form-group">
