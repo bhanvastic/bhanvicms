@@ -1,6 +1,6 @@
-<?php require_once("Includes/DB.php"); ?>
-<?php require_once("Includes/Functions.php"); ?>
-<?php require_once("Includes/Sessions.php"); ?>
+<?php require_once("includes/DB.php"); ?>
+<?php require_once("includes/Functions.php"); ?>
+<?php require_once("includes/Sessions.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
